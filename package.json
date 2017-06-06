@@ -1,0 +1,22 @@
+{
+  "name": "fullcounter",
+  "version": "1.0.0",
+  "description": "This is the finalized version of counter.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/amalekan/fullcounter.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/amalekan/fullcounter/issues"
+  },
+  "homepage": "https://github.com/amalekan/fullcounter#readme",
+  "dependencies": {
+    "express": "^4.15.3"
+  }
+}
