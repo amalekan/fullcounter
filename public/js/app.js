@@ -11,20 +11,19 @@ const Counter = {
 
   cacheDOM: function () {
     this.root = document.querySelector('#app');
-    this.button = document.querySelector('#button');
+    this.button = document.querySelector('#increment');
     this.output = document.querySelector('#output');
   },
 
   bindEvents: function () {
     this.button.addEventListener('click', () => {
       console.log('click!');
-      this.count+=1;
+      this.count += 1;
       this.render();
     });
   },
-  render:function () {
+  render: function () {
     this.output.textContent = this.count;
-
   }
+};  
   Counter.start();
-};
