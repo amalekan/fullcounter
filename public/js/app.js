@@ -3,6 +3,7 @@
 const Counter = {
   rootElement: '#app',
   count: 0,
+
   start: function(){
     this.cacheDOM();
     this.bindEvents();
@@ -18,13 +19,11 @@ const Counter = {
 
   bindEvents: function () {
     this.button.addEventListener('click', () => {
-      console.log('click!');
-      this.count += 1;
+      this.count += parseInt(document.querySelector('#inc').value);
       this.render();
     });
     this.minusButton.addEventListener('click', () => {
-      console.log('click!');
-      this.count -= 1;
+      this.count -= parseInt(document.querySelector('#dec').value);
       this.render();
     });
   },
