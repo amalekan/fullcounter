@@ -9,6 +9,6 @@ server.get('/fullcounter',(request,response)=> {
 });
 
 server.listen(port,() => {
-  console.log('Now listerning on port', port);
+  console.log('Now listening on port', port);
 
 });
